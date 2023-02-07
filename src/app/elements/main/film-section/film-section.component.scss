@@ -1,0 +1,31 @@
+* {
+    text-transform: uppercase;
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section {
+    .movies {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 5px;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: flex;
+                flex-direction: row;
+                img {
+                    max-width: 100%;
+                    max-height: 500px;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                }
+                
+            }
+        }
+    }
+    
+}

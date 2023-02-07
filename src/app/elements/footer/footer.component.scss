@@ -1,0 +1,66 @@
+footer {
+    bottom: 0;
+    background-color: black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #rexy {
+        height: 400px;
+        margin-right: 50px;
+    }
+    .text-area {
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .form {
+            input {
+                background-color: black;
+                border-bottom: white;
+                width: 78%;
+            }
+            button {
+                background-color: black;
+                border: none;
+                color: white;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+        .lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            ol {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                margin: 10px;
+                font-size: smaller;
+                li {
+                    &:hover {
+                        color: red;
+                    }
+                }
+          }
+        }
+        .rexy {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            h1 {
+                color:red;
+                text-shadow: 2px white;
+            }
+        }
+    }
+    #footer-logo {
+        display: flex;
+        height: 300px;
+
+    }
+    
+    
+}

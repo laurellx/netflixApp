@@ -1,0 +1,11 @@
+<section>
+    <div class="movies">
+        <h2>{{ filmSection.section }}</h2>
+        <ul>
+            <li *ngFor="let film of filmSection.films">
+                <img [src]="film.image.src" [alt]="film.image.alt">
+                <!-- <h4>{{ film.title }}</h4> -->
+            </li>
+        </ul>
+    </div>
+</section>
