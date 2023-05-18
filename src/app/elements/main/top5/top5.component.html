@@ -1,0 +1,13 @@
+<section>
+    <div class="movies">
+        <h2>{{ filmSection.section }}</h2>
+        <div class="movies-container">
+            <ul class="top5-list">
+                <li *ngFor="let film of filmSection.films; let i = index;">
+                    <h4 class="top5-list__index">{{i +1}}</h4>
+                    <img [src]="film.image.src" [alt]="film.image.alt">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

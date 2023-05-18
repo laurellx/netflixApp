@@ -16,10 +16,9 @@ export class MainComponent {
   public actionFilms: HomeInterface;
   public comedyFilms: HomeInterface;
   public dramaFilms: HomeInterface;
-
     
   constructor() {
-
+    
     this.top5Films = {
       section: "top5 Films",
       films: [{
@@ -122,7 +121,7 @@ export class MainComponent {
       {
         title: "Ni no Kuni",
         image: {
-          src: "./assets/Anime/ninokuni.webp",
+          src: "./assets/Anime/ninokuni.jpg",
           alt: "Ni no Kuni"
         }
       },
@@ -355,7 +354,7 @@ export class MainComponent {
       {
         title: "Mission: Impossible – Rogue Nation",
         image: {
-          src: "./assets/Accion/misioninposiblenacion.webp",
+          src: "./assets/Accion/misionimposiblenacion.webp",
           alt: "Mission: Impossible – Rogue Nation"
         }
       },
@@ -409,14 +408,14 @@ export class MainComponent {
       {
         title: "Once Upon a Time... in Hollywood",
         image: {
-          src: "./assets/Comedia/eraseholliwood.webp",
+          src: "./assets/Comedia/erasehollywood.webp",
           alt: "Once Upon a Time... in Hollywood"
         }
       },
       {
         title: "Family Guy",
         image: {
-          src: "./assets/Comedia/familyguy.webp",
+          src: "./assets/Comedia/family guy.webp",
           alt: "Family Guy"
         }
       },
@@ -505,7 +504,7 @@ export class MainComponent {
         {
           title: "The Guilty",
           image: {
-            src: "./assets/Drama/culpable.webp",
+            src: "./assets/Drama/culpable.jpg",
             alt: "The Guilty"
           }
         },
