@@ -1,16 +1,21 @@
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NgModule, Component, } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {
+    path: "",
+    component: HomeComponent
+  },
   {
     path: 'home',
     component: HomeComponent
   },
   {
     path: '**',
-    component: ErrorPageComponent
+    pathMatch: 'full',
+    component: ErrorPageComponent,
   }
 ];
 

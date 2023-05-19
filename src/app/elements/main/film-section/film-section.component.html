@@ -1,12 +1,15 @@
 <section>
+    <hr class="solid">
     <div class="movies">
         <h2>{{ filmSection.section }}</h2>
         <div class="movies-container">
             <ul>
                 <li *ngFor="let film of filmSection.films">
                 <img [src]="film.image.src" [alt]="film.image.alt">
-                <!-- <h4>{{ film.title }}</h4> -->
-            </li>
+                <div class="overlay">
+                    <h3 class="overlay-title">{{ film.title }}</h3>
+                    <h4 class="overlay-subtitle">Watch now</h4>
+                </div>
         </ul>
         </div>
     </div>

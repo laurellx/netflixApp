@@ -8,31 +8,70 @@ section {
     .movies {
         display: flex;
         flex-direction: column;
+
     }
     .movies-container {
+        overflow-y: scroll;
         ul {
             list-style: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             padding-inline-start: 0;
-            overflow-x: auto;
-            &::-webkit-scrollbar {
-                display: none;
-            }
             li {
                 display: flex;
                 flex-direction: row;
                 position: relative;
-                overflow: scroll;
                 img {
-                    width: 200px;
+                    width: 300px;
                     height: auto;
                     cursor: pointer;
                 }
                 &:hover {
                     transform: scale(1.1);
+                    margin: 0 20px;
                 } 
+                &:hover .overlay {
+                    height: 100%;
+                }
+            }
+            .overlay {
+                position: absolute;
+                bottom:0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0,0,0,0.8);
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .5s ease;
+                .overlay-title {
+                    color: red;
+                    font-size: 30px;
+                    font-family: 'Bebas Neue', sans-serif;
+                    white-space: nowrap;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .overlay-subtitle {
+                    color: white;
+                    font-family: 'Bebas Neue', sans-serif;
+                    white-space: nowrap;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
             }
         }
+    }
+    .solid {
+        border-top: 0.2px solid rgba(7, 7, 7, 0.8);
     }
 }       
