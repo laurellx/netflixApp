@@ -1,0 +1,41 @@
+/* GLOBAL STYLES */
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-inline-start: 0;
+}
+
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2em 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.fixed {
+  background-color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+/* GLOBAL STYLES *//*# sourceMappingURL=styles.css.map */
