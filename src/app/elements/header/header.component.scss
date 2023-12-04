@@ -1,34 +1,67 @@
 header {
-    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    width: 100vw;
+    transition: 0.2s;
+    position: sticky;
+    top: 0;
     div {
-        padding: 0 10px 0 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        img {
-            height: 80px;
+        background-color: black;
+        flex-direction: column;
+        nav {
+            margin: 2%;
+            justify-content: space-around;
+            ol {
+                width: 100%;
+                flex-direction: row;
+                align-content: center;
+                justify-content: space-between;
+                li {
+                    text-transform: uppercase;
+                    img {
+                        height: 12px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }
         }
     }
-    nav {
-        display: flex;
-        flex-direction: row;
-        ol {
-            display: flex;
-            list-style: none;
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        div {
+            padding: 0 0.5%;
+            background-color: black;
+            flex-direction: row;
             justify-content: space-between;
-            li {
-                font-size: smaller;
-                text-transform: uppercase;
-                margin: 0 20px 0 20px;
-                img {
-                    height: 15px;
-                }
-                a {
-                    text-decoration: none;
-                    color: white;
-                    &:hover {
-                        color: red;
+            align-items: center;
+            img {
+                height: 30%;
+            }
+            nav {
+                flex-direction: row;
+                ol {
+                    list-style: none;
+                    justify-content: space-between;
+                    li {
+                        margin: 0 15px;
+                        img {
+                            height: 15px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                color: red;
+                            }
+                        }
                     }
                 }
             }

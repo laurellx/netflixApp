@@ -1,0 +1,68 @@
+header {
+  z-index: 100;
+  text-align: center;
+  width: 100vw;
+  transition: 0.2s;
+  position: sticky;
+  top: 0;
+}
+header div {
+  background-color: black;
+  flex-direction: column;
+}
+header div nav {
+  margin: 2%;
+  justify-content: space-around;
+}
+header div nav ol {
+  width: 100%;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+header div nav ol li {
+  text-transform: uppercase;
+}
+header div nav ol li img {
+  height: 12px;
+}
+header div nav ol li a {
+  text-decoration: none;
+  color: white;
+}
+header div nav ol li a:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 992px) {
+  header div {
+    padding: 0 0.5%;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header div img {
+    height: 30%;
+  }
+  header div nav {
+    flex-direction: row;
+  }
+  header div nav ol {
+    list-style: none;
+    justify-content: space-between;
+  }
+  header div nav ol li {
+    margin: 0 15px;
+  }
+  header div nav ol li img {
+    height: 15px;
+  }
+  header div nav ol li a {
+    text-decoration: none;
+    color: white;
+  }
+  header div nav ol li a:hover {
+    color: red;
+  }
+}/*# sourceMappingURL=header.component.css.map */

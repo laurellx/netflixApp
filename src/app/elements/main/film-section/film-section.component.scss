@@ -4,25 +4,24 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 section {
-    padding: 0 20px;
+    padding: 0 1%;
     .movies {
         display: flex;
         flex-direction: column;
-
     }
     .movies-container {
-        overflow-y: scroll;
+        overflow-y: hidden;
         ul {
             list-style: none;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             padding-inline-start: 0;
             li {
                 display: flex;
                 flex-direction: row;
                 position: relative;
                 img {
-                    width: 300px;
+                    width: 250px;
                     height: auto;
                     cursor: pointer;
                 }
@@ -46,7 +45,7 @@ section {
                 transition: .5s ease;
                 .overlay-title {
                     color: red;
-                    font-size: 30px;
+                    font-size: 25px;
                     font-family: 'Bebas Neue', sans-serif;
                     white-space: nowrap;
                     position: absolute;
