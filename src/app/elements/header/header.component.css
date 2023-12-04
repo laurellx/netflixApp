@@ -8,7 +8,7 @@ header {
 }
 header div {
   background-color: black;
-  flex-direction: column;
+  flex-direction: row;
 }
 header div nav {
   margin: 2%;
@@ -23,14 +23,12 @@ header div nav ol {
 header div nav ol li {
   text-transform: uppercase;
 }
-header div nav ol li img {
-  height: 12px;
-}
-header div nav ol li a {
+header div nav ol li a, header div nav ol li span {
   text-decoration: none;
   color: white;
 }
-header div nav ol li a:hover {
+header div nav ol li a:hover, header div nav ol li span:hover {
+  cursor: pointer;
   color: red;
 }
 
