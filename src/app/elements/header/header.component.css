@@ -11,7 +11,7 @@ header div {
   flex-direction: row;
 }
 header div nav {
-  margin: 2%;
+  margin: 0.5% 2%;
   justify-content: space-around;
 }
 header div nav ol {

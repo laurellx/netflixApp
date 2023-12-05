@@ -50,7 +50,7 @@ section .movies-container ul .overlay {
 }
 section .movies-container ul .overlay .overlay-title {
   color: red;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Bebas Neue", sans-serif;
   white-space: nowrap;
   position: absolute;
@@ -71,6 +71,7 @@ section .movies-container ul .overlay .overlay-subtitle {
 }
 section .movies-container ul .overlay .overlay-subtitle:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 section .solid {
   border-top: 0.2px solid rgba(7, 7, 7, 0.8);
