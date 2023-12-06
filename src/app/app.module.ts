@@ -9,6 +9,16 @@ import { FooterComponent } from './elements/footer/footer.component';
 import { MainComponent } from './elements/main/main.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+
+
+
+Component({
+    selector: 'app-root',
+    templateUrl: '/app.component.html',
+    styleUrls: ['./app.component.css']
+})
 
 @NgModule({
     declarations: [
@@ -27,4 +37,17 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
         MainModule,
     ]
 })
-export class AppModule { }
+export class AppModule implements OnInit {
+    title = "my-app";
+    constructor(public responsive: BreakpointObserver) { }
+    
+    ngOnInit() {
+        this.responsive
+    .observe([Breakpoints.HandsetPortrait])
+    .subscribe((state: BreakpointState) => {
+        if (state.matches) { console.log('This is the Handset Portrait point at max-width: 599.98 px and portrait orientation.') }
+    });
+    }
+
+    
+ }
