@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 
   
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'netflix-app';
+
+  constructor (private responsive: BreakpointObserver) { }
+
+  ngOnInit() {
+    this.responsive.observe([Breakpoints.Handset])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) { console.log("This is the Handset point.")}
+      });
+  }
+
 }
