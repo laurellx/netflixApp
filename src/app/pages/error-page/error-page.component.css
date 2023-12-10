@@ -5,7 +5,8 @@
 
 .background {
   display: flex;
-  height: 90vh;
+  height: 100vh;
+  overflow: hidden;
   background-color: black;
   background-image: url(/assets/background/imageedit_1_7834959968.png);
   background-position: center;
