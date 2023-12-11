@@ -7,6 +7,9 @@ header {
   top: 0;
 }
 header div {
+  padding: 0 0.5%;
+  justify-content: space-between;
+  align-items: center;
   background-color: black;
   flex-direction: row;
 }
@@ -21,7 +24,9 @@ header div nav ol {
   justify-content: space-between;
 }
 header div nav ol li {
+  list-style: none;
   text-transform: uppercase;
+  margin: 0 15px;
 }
 header div nav ol li a, header div nav ol li span {
   text-decoration: none;
@@ -30,37 +35,4 @@ header div nav ol li a, header div nav ol li span {
 header div nav ol li a:hover, header div nav ol li span:hover {
   cursor: pointer;
   color: red;
-}
-
-@media only screen and (min-width: 992px) {
-  header div {
-    padding: 0 0.5%;
-    background-color: black;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header div img {
-    height: 30%;
-  }
-  header div nav {
-    flex-direction: row;
-  }
-  header div nav ol {
-    list-style: none;
-    justify-content: space-between;
-  }
-  header div nav ol li {
-    margin: 0 15px;
-  }
-  header div nav ol li img {
-    height: 15px;
-  }
-  header div nav ol li a {
-    text-decoration: none;
-    color: white;
-  }
-  header div nav ol li a:hover {
-    color: red;
-  }
 }/*# sourceMappingURL=header.component.css.map */

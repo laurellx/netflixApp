@@ -12,12 +12,14 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 export class AppComponent implements OnInit {
   title = 'netflix-app';
 
-  constructor (private responsive: BreakpointObserver) { }
+  constructor (public responsive: BreakpointObserver) { }
 
   ngOnInit() {
     this.responsive.observe([Breakpoints.Handset])
       .subscribe((state: BreakpointState) => {
-        if (state.matches) { console.log("This is the Handset point.")}
+        if (state.matches) {
+          console.log("This is the Handset point.")
+        }
       });
   }
 
